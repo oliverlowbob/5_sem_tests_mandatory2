@@ -1,32 +1,31 @@
 using NUnit.Framework;
 using System;
+using System.IO;
 using System.Xml;
 
 namespace PhoneCompany
 {
     public class XmlTest
     {
-        string path = Environment.CurrentDirectory;
-
         XmlDocument delivery = new XmlDocument();
 
-        XmlDocument order = new XmlDocument();
 
-        XmlDocument storage = new XmlDocument();
 
         [SetUp]
         public void Setup()
         {
-            delivery.Load(path + "Delivery.xml");
-            delivery.Load(path + "Order.xml");
-            delivery.Load(path + "Storage.xml");
+            string workingDirectory = Environment.CurrentDirectory;
+            string path = Directory.GetParent(workingDirectory).Parent.Parent.FullName;
 
+            delivery.Load(path + @"\Delivery.xml");
         }
 
         [Test]
         public void TestDeliveryId()
         {
-            Assert.AreEqual(50, delivery.GetElementById("DeliveryId"));
+            var element = delivery.GetElementsByTagName("DeliveryId");
+
+            Assert.AreEqual("50", element.Item(0).InnerText);
         }
     }
 }

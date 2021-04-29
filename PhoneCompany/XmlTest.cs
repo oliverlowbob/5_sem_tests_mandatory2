@@ -8,6 +8,7 @@ namespace PhoneCompany
 {
     public class XmlTest
     {
+
         [SetUp]
         public void Setup()
         {
@@ -16,20 +17,23 @@ namespace PhoneCompany
         [Test]
         public void TestDeliveryId()
         {
+            XmlDocument deliveryXml = new XmlDocument();
+
             Serializer ser = new Serializer();
-            string path = string.Empty;
-            string xmlInputData = string.Empty;
-            string xmlOutputData = string.Empty;
 
-            string workingDirectory = Environment.CurrentDirectory;
-            path = Directory.GetParent(workingDirectory).Parent.Parent.FullName + @"\Delivery.xml";
+            var workingDirectory = Environment.CurrentDirectory;
 
-            xmlInputData = File.ReadAllText(path);
+            var path = Directory.GetParent(workingDirectory).Parent.Parent.FullName + @"\Delivery.xml";
+
+            deliveryXml.Load(path);
+
+            var xmlInputData = File.ReadAllText(path);
 
             DeliveryInfo deliveryInfo = ser.Deserialize<DeliveryInfo>(xmlInputData);
 
-            Assert.AreEqual("50", deliveryInfo.DeliveryId);
-            Assert.AreEqual("50", deliveryInfo.DeliveryId);
+            var element = deliveryXml.GetElementsByTagName("DeliveryId");
+
+            Assert.AreEqual(element.Item(0).InnerText, deliveryInfo.DeliveryId);
         }
     }
 }

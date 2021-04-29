@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE OrderInfo SYSTEM "Order.dtd">
+<!-- Order.xml stores information about orders from customers -->
+<OrderInfo>
+	<OrderId>256</OrderId>
+	<Items>
+		<Item>
+			<Model>iPhone 8</Model>
+			<Quantity>1000</Quantity>
+		</Item>
+		<Item>
+			<Model>Samsung Galaxy S10</Model>
+			<Quantity>1000</Quantity>
+		</Item>
+	</Items>
+</OrderInfo>
+

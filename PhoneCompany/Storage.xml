@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE StorageInfo SYSTEM "Storage.dtd">
+<!-- Storage.xml stores information about the storage on items on the depot -->
+<StorageInfo>
+	<Items>
+		<Item>
+			<Id>256773113</Id>
+			<Category>Phone</Category>
+			<Model>Samsung Spacestar 500</Model>
+			<Price>8700</Price>
+			<Quantity>26</Quantity>
+		</Item>
+		<Item>
+			<Id>2786868372</Id>
+			<Category>Phone</Category>
+			<Model>iPhone MoneyStealer</Model>
+			<Price>15000</Price>
+			<Quantity>250</Quantity>
+		</Item>		
+	</Items>
+</StorageInfo>

@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE DeliveryInfo SYSTEM "Delivery.dtd">
+<!-- Delivery.xml stores information about order deliveries -->
+<DeliveryInfo>
+	<DeliveryId>50</DeliveryId>
+	<Customer>
+		<Name>Anders Madsen</Name>
+		<Email>andersmadsen@gmail.com</Email>
+		<Phone>+4520392938</Phone>	
+	</Customer>
+	<Adress>Stærevej 50, 2200 København N</Adress>
+	<Delivery>
+		<Type>Express</Type>
+		<Price>50</Price>
+		<Company>
+			<Name>GLS</Name>
+		</Company>
+	</Delivery>
+	<OrderInfo>
+		<Customer>
+			<Name>Anders Madsen</Name>
+			<Email>andersmadsen@gmail.com</Email>
+			<Phone>+4520392938</Phone>
+		</Customer>
+		<Adress>Stærevej 50, 2200 København N</Adress>
+		<Items>
+			<Item>
+				<Model>iPhone 8</Model>
+				<Quantity>1</Quantity>
+			</Item>
+			<Item>
+				<Model>Samsung Galaxy S10</Model>
+				<Quantity>1</Quantity>
+			</Item>
+		</Items>
+	</OrderInfo>	
+</DeliveryInfo>
+

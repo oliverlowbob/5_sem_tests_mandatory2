@@ -1,0 +1,25 @@
+<?xml encoding="UTF-8"?>
+
+<!ELEMENT OrderInfo (OrderId,Items)>
+<!ATTLIST OrderInfo
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT OrderId (#PCDATA)>
+<!ATTLIST OrderId
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Items (Item)+>
+<!ATTLIST Items
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Item (Model,Quantity)>
+<!ATTLIST Item
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Model (#PCDATA)>
+<!ATTLIST Model
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Quantity (#PCDATA)>
+<!ATTLIST Quantity
+  xmlns CDATA #FIXED ''>

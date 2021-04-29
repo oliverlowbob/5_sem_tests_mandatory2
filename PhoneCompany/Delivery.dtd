@@ -1,0 +1,65 @@
+<?xml encoding="UTF-8"?>
+
+<!ELEMENT DeliveryInfo (DeliveryId,Customer,Adress,Delivery,OrderInfo)>
+<!ATTLIST DeliveryInfo
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT DeliveryId (#PCDATA)>
+<!ATTLIST DeliveryId
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Delivery (Type,Price,Company)>
+<!ATTLIST Delivery
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT OrderInfo (Customer,Adress,Items)>
+<!ATTLIST OrderInfo
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Type (#PCDATA)>
+<!ATTLIST Type
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Price (#PCDATA)>
+<!ATTLIST Price
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Company (Name)>
+<!ATTLIST Company
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Items (Item)+>
+<!ATTLIST Items
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Item (Model,Quantity)>
+<!ATTLIST Item
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Model (#PCDATA)>
+<!ATTLIST Model
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Quantity (#PCDATA)>
+<!ATTLIST Quantity
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Customer (Name,Email,Phone)>
+<!ATTLIST Customer
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Email (#PCDATA)>
+<!ATTLIST Email
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Phone (#PCDATA)>
+<!ATTLIST Phone
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Adress (#PCDATA)>
+<!ATTLIST Adress
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Name (#PCDATA)>
+<!ATTLIST Name
+  xmlns CDATA #FIXED ''>

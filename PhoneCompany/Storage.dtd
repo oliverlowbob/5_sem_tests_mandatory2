@@ -1,0 +1,33 @@
+<?xml encoding="UTF-8"?>
+
+<!ELEMENT StorageInfo (Items)>
+<!ATTLIST StorageInfo
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Items (Item)+>
+<!ATTLIST Items
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Item (Id,Category,Model,Price,Quantity)>
+<!ATTLIST Item
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Id (#PCDATA)>
+<!ATTLIST Id
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Category (#PCDATA)>
+<!ATTLIST Category
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Model (#PCDATA)>
+<!ATTLIST Model
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Price (#PCDATA)>
+<!ATTLIST Price
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Quantity (#PCDATA)>
+<!ATTLIST Quantity
+  xmlns CDATA #FIXED ''>
